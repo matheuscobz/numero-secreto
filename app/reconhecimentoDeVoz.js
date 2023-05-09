@@ -1,10 +1,8 @@
 const elementoChute = document.getElementById('chute')
-const SpeechRecognition = window.SpeechRecognition || webkitSpeechRecognition;
+window.SpeechRecognition = window.SpeechRecognition || webkitSpeechRecognition;
 
 const recognition = new SpeechRecognition();
 recognition.lang = 'pt-Br'
-recognition.continuous = true;
-recognition.interimResults = true;
 recognition.start()
 
 recognition.addEventListener('result', onSpeak)
