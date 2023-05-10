@@ -19,6 +19,7 @@ function exibeChuteNaTela(chute){
         document.body.innerHTML = `
             <div class="principal" style="background-color: #f95454;"> 
                 <h2> GAME OVER! </h2>
+                <button id="jogar-novamente" class="btn-jogar">Jogar novamente</button> 
             </div>
         `
     }
